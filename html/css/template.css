@@ -1,0 +1,38 @@
+html {
+	
+}
+
+body {
+	
+}
+
+header {
+	background-color: #ff00ff;
+	height: 50px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+nav {
+	text-align: center;
+}
+
+section {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+footer {
+	background-color: #ff00ff;
+	height: 25px;
+	text-align: center;
+}
+
+img {
+	float: left;
+	margin-left: 10px;
+	max-width: 100%;
+	height: auto;
+}
