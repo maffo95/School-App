@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="assets/css/styles.css" rel="stylesheet" >
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color", "#cccccc");
+            });
+            $("input").blur(function(){
+                $(this).css("background-color", "#ffffff");
+            });
+        });
+    </script>
+</head>
+<body>
+<header>
+    <nav id="nav_bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="SchoolApp.html">SchoolApp</a></li>
+            <li><a href="StudieEisen.html">Studie</a></li>
+        </ul>
+    </nav>
+</header>
+<table>
+    <tr>
+        <td>Naam: </td>
+        <td><input type="text" name="TxtNaam"></td>
+    </tr>
+    <tr>
+        <td>Stundent nummer: </td>
+        <td><input type="number" name="NumNummer"></td>
+        <td>/*Nummer beperking hoe?*/</td>
+    </tr>
+    <tr>
+        <td>Klas: </td>
+        <td><input type="text" name="TxtKlas"></td>
+        <td>/*Lijst van klassen?*/</td>
+    </tr>
+    <tr>
+        <td>Opleiding: </td>
+        <td><input type="text" name="TxtOpleiding"></td>
+        <td>/*Lijst van opleidingen?*/</td>
+    </tr>
+    <tr>
+        <td>Diploma datum: </td>
+        <td><input type="date" name="DatDiploma"></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="Toevoegen" name="BtnToevoegen"></td>
+        <td><input type="button" value="Verwijderen" name="BtnVerwijderen"></td>
+    </tr>
+</table>
+
+</body>
+</html>
