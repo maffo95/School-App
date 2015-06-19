@@ -43,18 +43,28 @@
 					$db = new PDO('mysql:host=localhost; dbname=school app', 'root', '');
 
 					//tabel uitlezen
-					$sql = "SELECT * FROM leerlingen";
+					$sql = "SELECT * FROM stage";
 					$resultaat = $db->query ($sql);
 
 					foreach ($resultaat as $rij) {
 						echo "Leerlingnummer: ";
 					    echo $rij['Leerlingnummer']."<br>";
-					    echo "Naam: ";
-					    echo $rij['Naam']."<br>";
-					    echo "Klas: ";
-					    echo $rij['Klas']."<br>";
-					    echo "Opleiding: ";
-					    echo $rij['Opleiding']."<br><br>";
+					    echo "Bedrijfsnaam: ";
+					    echo $rij['Bedrijfsnaam']."<br>";
+					    echo "Plaats: ";
+					    echo $rij['Plaats']."<br>";
+					    echo "Postcode: ";
+					    echo $rij['Postcode']."<br>";
+					    echo "Telefoonnummer: ";
+					    echo $rij['Telefoonnummer']."<br>";
+					    echo "E-mail: ";
+					    echo $rij['E-mail']."<br>";
+					    echo "Naam begeleider: ";
+					    echo $rij['Naam begeleider']."<br>";
+					    echo "Periode: ";
+					    echo $rij['Periode']."<br>";
+					    echo "Beoordeling: ";
+					    echo $rij['Beoordeling']."<br><br>";
 					}
 				?>		
 		</section>
